@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>the forms page</title>
+        <link rel="stylesheet" href="/css/index.css">
+
+	</head>
+	<body>
+        
+        <h1 id="myHeader">Making FORMS</h1>
+        <nav>
+          <a href="/index.php"><strong>Crack</strong></a>
+          <a href="/indexa.php"><strong>Hello World</strong></a>
+          <a href="/index1.html"><strong>Cli Sites</strong></a>
+          <a href="/gp/"><strong>gp</strong></a>
+          <a href="/forms/"><strong>Forms</strong></a>
+    </nav>
+        
+		<form action="action_page.php" method="get" target="_blank">
+			<h1>Add Your Verse for today</h1>
+			<hr>
+			<label for="paste-1">Paste your verse here:</label>
+			<br>
+			<textarea id="paste-1" name="paste-1" type="text" cols="40" rows="8"></textarea>
+			<br>
+			<input id="submit" type="submit" value="submit">
+		</form>
+        <?php
+        $myfile = fopen("action_page.php", "a") or die("Unable to open file!");
+        $txt = "Mickey Mouse\n";
+        fwrite($myfile, $txt);
+        $txt = "Minnie Mouse\n";
+        fwrite($myfile, $txt);
+        fclose($myfile);
+        ?>
+		<h2>The method Attribute</h2>
+
+<p>This form will be submitted using the GET method:</p>
+
+<form action="action_page.php" target="_blank" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

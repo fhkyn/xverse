@@ -1,0 +1,42 @@
+#myHeader {
+  background-color: goldenrod;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+nav {
+	background-color: beige;
+	width:90%;
+	text-align:center ;
+	height: 30px;
+	border:5px solid black;
+	margin-bottom: 15px;
+	background-color:#A52A2A;
+	
+h1 {
+	margin-bottom: 15px;
+}
+a {
+	background-color: beige;
+	
+	text-align:center ;
+	text-decoration: none;
+	height: 1em;
+	border:1px solid black;
+	margin-bottom: 15px;
+	float: left;
+}
+/*h2 {
+	background-color: beige;
+	width:30%;
+	text-align:center ;
+	height: 150px;
+	border:10px solid black;
+	margin-bottom: 15px;
+	background-color:#A52A2A;
+	float:left;
+}
+*/
+pre {
+	text-align: left;
+}
